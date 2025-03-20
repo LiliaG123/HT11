@@ -1,11 +1,66 @@
 div {
 
-display: flex 1;
-
-
 border-width: 2px;
 border-color: gray;
-background-color: pink;
 
 
+}
+
+.header{
+    background-color:lightblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-body{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+
+}
+
+.inside-body{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex: 6;
+
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightpink;
+
+}
+
+.mascot-pet{
+    height: 500px;
+}
+
+.mascot-div{
+    display: flex;
+    flex: 1;
+}
+
+.mascot-info{
+    background-color: white;
+    display: flex;
+    flex: 3;
+    margin-left: 50px;
+}
+
+.side-div{
+    display: flex;
+    flex: 1;
 }
