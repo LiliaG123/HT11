@@ -1,0 +1,8 @@
+.water-icon{
+    height: 60px;
+}
+
+.task-table{
+    display: flex;
+    flex-direction: column;
+}
