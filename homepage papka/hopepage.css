@@ -17,7 +17,7 @@ border-color: gray;
 
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
 
     border-width: 2px;
     border-style: solid;
@@ -54,13 +54,53 @@ border-color: gray;
 }
 
 .mascot-info{
-    background-color: white;
+    background-color: yellow;
     display: flex;
     flex: 3;
-    margin-left: 50px;
+    margin: 5px;
+}
+
+.quote{
+    background-color: lightgreen;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+
+
+.mascot-section{
+    background-color: violet;
+    flex-direction: column;
+    display: flex;
+    flex: 2;
+    margin-left: 20px;
+}
+
+.progress-bar{
+    width: 100px;
+    background-color: white;
+    border-width: 1px;
+    border-color: grey;
+
+    border-radius: 20px;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.progress-bar-track{
+    width: 30px;
+    background-color: green;
+    border-width: 1px;
+    border-color: grey;
+
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .side-div{
     display: flex;
-    flex: 1;
+    
 }
