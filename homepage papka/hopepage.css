@@ -1,11 +1,54 @@
 div {
 
-display: flex 1;
-
-
 border-width: 2px;
 border-color: gray;
-background-color: pink;
 
 
+}
+
+.header{
+    background-color:lightblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-body{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+
+}
+
+.inside-body{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightpink;
+
+}
+
+.mascot{
+    height: 500px;
+}
+
+.side-div{
+    display: flex;
+    flex: 1;
 }
