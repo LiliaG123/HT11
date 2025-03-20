@@ -1,0 +1,11 @@
+this._s=this._s||{};(function(_){var window=this;
+try{
+_.r("zmptHf");
+var aty=function(a,b=!0){var c=a.Nn();if(b){a=a.Aa("n","");if(a==="")return;a=Number(a)}else a=0;if(!(a>c.length)&&(c=c[a]))return c.Aa()},dty=function(a,b,c,d){const e=new bty;cty(e,a,b,c,d);a=document.createElement("script");a.setAttribute("type","speculationrules");_.uja(a,_.ska(e.oa));document.body.appendChild(a)};var cty=function(a,b,c,d=!1,e=!1){b={source:"list",urls:b};c&&(c=`${d?"except":"params"}=(${c.map(f=>`"${f}"`).join(" ")})`,b.expects_no_vary_search=`${e?"key-order, ":""}${d?"params, ":""}${c}`);d=a.oa.prefetch;d||(d=[],a.oa.prefetch=d);d.push(b)},bty=class{constructor(){this.oa={}}};var ety=function(a,b,c=0){const d=new _.ZHa(_.uv(a.Oc).substring(1),_.uKa);for(const e of d.keys())_.qKa.has(e)||d.delete(e);d.set("q",b);d.set("pf",c===1?"op":"srp");d.set("ei",a.wg.Na());d.set("sclient",a.wg.Ca());return`/search?${d.toString()}`};
+_.Qr(_.v2a,class extends _.vh{static Ra(){return{service:{Oc:_.vv},model:{s4d:_.XAp}}}constructor(a){super();this.oa=new Set;this.Aa=_.il(this.getData("pfl"));this.Pa=_.il(this.getData("pqmt"));this.Na=_.il(this.getData("pescl"));this.Ba=_.il(this.getData("mdbp"));this.La=null;let b;this.Ga=(b=_.el(this.getData("nvshp")))==null?void 0:b.split(",");this.Da=!!_.il(this.getData("nvshe"));this.Ea=!!_.il(this.getData("nvshk"));this.Qa=_.il(this.getData("msrt"));this.wg=a.model.s4d.wg;this.Oc=a.service.Oc}mhd(a,
+b){if(!(!fty||!gty&&this.Pa!==null&&(a.getQuery()===this.wg.Ba()||a.getQuery().length<this.Pa)||(b=aty(b,gty),!b||this.Aa&&this.oa.size===this.Aa||this.oa.has(b)||hty&&!b.startsWith(a.getQuery())||this.Na&&b.length>this.Na))){this.oa.add(b);var c=ety(this,b);this.Ba!==null&&this.Ba>=0?(this.La!==null&&(0,_.uo)(this.La),this.La=(0,_.to)(()=>{dty([c],this.Ga,this.Da,this.Ea)},this.Ba)):dty([c],this.Ga,this.Da,this.Ea)}}Tyc(a,b=0){this.oa.has(a)||this.Aa&&this.oa.size===this.Aa||(this.oa.add(a),a=ety(this,
+a,b),dty([a],this.Ga,this.Da,this.Ea))}ohd(a){if(!ity)return!1;const b=google.timers.load.wsrt;if(this.Qa!==null&&b!==void 0&&b>=this.Qa)return!1;this.Tyc(a.query,1);return!1}});var gty=_.$sy,ity=_.Xsy,fty=_.Ysy,hty=_.Zsy;Promise.resolve();
+_.u();
+}catch(e){_._DumpException(e)}
+})(this._s);
+// Google Inc.
