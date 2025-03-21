@@ -29,25 +29,19 @@
                 justify-content: space-between;
                 align-items: center;
             }
-            .flower-button {
-                height: 40px;
-                width: 40px;
+            .logo {
+                height: 45px;
                 border-radius: 20px;
-            }
-            .flower {
-                height: 40px;
-                border-radius: 22px;
-                border-style: solid;
-                border-width: 1px;
+                border: none;
             }
             .homepage-logo {
                height: 40px;
                border-radius: 20px;
                border-style: solid;
-               border-width: 1px;
+               border: none;
             }
             .language-icon {
-                height: 40px;
+                height: 37px;
                 border-radius: 20px;
             }
             .name {
@@ -62,6 +56,8 @@
                 width: 500px;
                 height: 30px;
                 border-radius: 20px;
+                border-width: 1px;
+                background-color: rgb(245, 245, 245);
             }
             .dropbtn {
             background-color: rgb(4, 170, 109);
@@ -103,7 +99,7 @@
             }
             .information-block {
             height: 530px;
-            border: 2px solid rgb(0, 0, 0); 
+            border: 1px solid rgb(0, 0, 0); 
             width: 500px;
             margin-top: 30px;
             margin-left: 25px;
@@ -114,12 +110,14 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s; 
             margin-left: 55px;
+            background-color: rgb(245, 245, 245);
             }
             .information-block:hover {
              background-color: rgb(240, 240, 240); 
             }
             .benefits {
                 font-size: 20px;
+                margin-right: 10px;
             }
             .benefits,
             .heading,
@@ -137,12 +135,20 @@
                 display: flex;
                 align-items: center;
             }
+
+            .dd-button{
+                margin-top: -2px;
+                border-radius: 0px;
+                border-width: 1px;
+                border-color: gray;
+                background-color: white;
+            }
         </style>
     </head>
-    <body style="margin-top: 0; padding-top: 55px;">
+    <body style="margin-top: 0; padding-top: 55px; height: 3000px;">
         <div class="header">
             <div class="left-section">
-                <img class="flower" src="flower01.jpeg">
+                <img class="logo" src="../pictures/revie/logo.png">
                 <a href="#"><img class="homepage-logo" src="homepage-icon.jpg"></a>
                 <a href="#"><img class="language-icon" src="language-icon.png"></a>
             </div>
@@ -150,12 +156,24 @@
                 <div class="dropdown">
                     <button class="menu">Menu &#x2193;</button>
                     <div class="dropdown-content">
-                      <a href="#">Meditation</a>
-                      <a href="#">Yoga</a>
-                      <a href="#">Water intake</a>
-                      <a href="#">Sleep</a>
-                      <a href="#">Information</a>
-                      <a href="#">Help</a>
+                        <button class="dd-button">
+                            <a href="informaciq.html#row1">Meditation</a>
+                        </button>
+                        <button class="dd-button">
+                            <a href="informaciq.html#row1">Yoga</a>
+                        </button>
+                        <button class="dd-button">
+                            <a href="informaciq.html#row1">Water intake</a>
+                        </button>
+                        <button class="dd-button">
+                            <a href="informaciq.html#row1">Sleep</a>
+                        </button>
+                        <button class="dd-button">
+                            <a href="informaciq.html#row1">Information</a>
+                        </button>
+                        <button class="dd-button">
+                            <a href="informaciq.html#row1">Help</a>
+                        </button>
                     </div>
                   </div>
             </div>
@@ -165,7 +183,7 @@
             </div>
         </div>
             <div class="blocks">
-                <a class="link"  href="https://www.youtube.com/watch?v=inpok4MKVLM" target="blank">
+                <a class="link"  href="https://www.mindful.org/how-to-meditate/" target="blank">
                     <div class="information-block">
                         <img class="picture" src="meditation.jpg">
                         <h2 class="heading">Meditation</h2>
@@ -176,18 +194,47 @@
                     </div>
                   </a>
 
-                  <a class="link"  href="https://www.youtube.com/watch?v=v7AYKMP6rOE" target="blank">
+                  <a class="link"  href="https://www.youtube.com/watch?v=inpok4MKVLM" target="blank">
                     <div class="information-block">
-                        <img class="picture" src="yoga.jpg">
-                        <h2 class="heading">Yoga</h2>
-                        <p class="benefits"> Regular yoga practice helps stretch and lengthen muscles, increasing overall flexibility.
-                             It can lower blood pressure, improve circulation, and reduce the risk of heart disease.
-                           Yoga encourages proper alignment, reducing strain on your spine and improving balance.
+                        <img class="picture" src="thumbnail1.jpg">
+                        <h2 class="heading">Meditation video</h2>
+                        <p class="benefits"> If you are feeling restless, listen to this guided meditation to ease
+                             your mind and body into falling asleep.Feel better, be better, and do better. Subscribe to 
+                             Goodful for all your healthy self care needs, from food to fitness and everything in between!
                         </p>
                     </div>
                   </a>
             </div>
 
+            <div class="blocks">
+                <a class="link"  href="https://www.medicalnewstoday.com/articles/286745" target="blank">
+                    <div class="information-block">
+                        <img class="picture" src="yoga.jpg">
+                        <h2 class="heading">Yoga</h2>
+                        <p class="benefits"> Yoga stretches and strengthens muscles, reducing stiffness and enhancing mobility. 
+                            This can help with posture, balance, and overall body function.
+                            The breathing techniques in yoga (pranayama) improve oxygen flow, 
+                            which energizes the body and boosts organ function.
+                            Yoga promotes mindfulness and relaxation, lowering cortisol levels (the stress hormone).
+                        </p>
+                        </div>
+                  </a>
+
+                  <a class="link"  href="https://www.youtube.com/watch?app=desktop&v=eTgNgGO_bLs&t=01m38s" 
+                  target="blank">
+                    <div class="information-block">
+                        <img class="picture" src="thumbnail3.jpg">
+                        <h2 class="heading">Yoga-video</h2>
+                        <p class="benefits"> Yoga for Complete Beginners! Adriene welcomes all levels - complete and 
+                            total beginners to start here! Hop on the mat and start to build the foundation of your
+                             own yoga practice with this 20 minute home workout video! Enjoy, stay mindful and find 
+                             what feels good. 
+                        </p>
+                    </div>
+                  </a>
+            </div>
+                  
+            
             <div class="blocks">
                 <a class="link"  href="https://nutritionsource.hsph.harvard.edu/water/" target="blank">
                     <div class="information-block">
@@ -213,5 +260,19 @@
                     </div>
                   </a>
             </div>
+                
+            
+
+            <script>
+                
+
+            </script>
+
+
+
+
     </body>
+
+
+
 </html>
