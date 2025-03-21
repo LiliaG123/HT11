@@ -1,3 +1,7 @@
+body{
+    font-family: 'Winky Sans';
+}
+
 .header{
     background-color:lightblue;
     display: flex;
@@ -53,24 +57,25 @@
 }
 
 .mascot-info{
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: flex;
     flex: 3;
     margin: 5px;
 }
 
 .quote{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     margin: 5px;
 }
 
 .quote-text{
     font-size: 45px;
+    margin-left: 10px;
 }
 
 
 .mascot-section{
-    background-color: violet;
+    /*background-color: violet;*/
     flex-direction: column;
     display: flex;
     flex: 2;
@@ -80,7 +85,7 @@
 
 .progress-bar{
     width: 100px;
-    background-color: white;
+    background-color: rgb(197, 222, 120);
     border-width: 1px;
     border-color: black;
 
@@ -96,7 +101,7 @@
 }
 
 .progress-bar-track{
-    background-color: rgb(4, 166, 195);
+    background: linear-gradient(to right,  rgb(241 173 156), rgb(249, 110, 110));
     border-width: 1px;
     border-color: grey;
 
