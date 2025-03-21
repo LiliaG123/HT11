@@ -61,12 +61,11 @@
 
 .quote{
     background-color: lightgreen;
-    
     margin: 5px;
 }
 
 .quote-text{
-    font-size: 30px;
+    font-size: 45px;
 }
 
 
@@ -111,4 +110,24 @@
 .side-div{
     display: flex;
     
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.calendar-button {
+    width: 40%;
+    padding: 8px; 
+}
+
+
+.calendar-button{
+    margin: auto;
+    width;: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
