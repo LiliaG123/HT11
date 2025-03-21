@@ -1,0 +1,134 @@
+body{
+    font-family: 'Winky Sans';
+}
+
+.header{
+    background-color:lightblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-body{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+
+
+    margin-right: 150px;
+    margin-left: 150px;
+
+}
+
+.inside-body{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex: 6;
+
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 17px;
+
+
+}
+
+.mascot-pet{
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.mascot-div{
+    display: flex;
+    flex: 1;
+}
+
+.mascot-info{
+    /*background-color: yellow;*/
+    display: flex;
+    flex: 3;
+    margin: 5px;
+}
+
+.quote{
+    /* background-color: lightgreen; */
+    margin: 5px;
+}
+
+.quote-text{
+    font-size: 45px;
+    margin-left: 10px;
+}
+
+
+.mascot-section{
+    /*background-color: violet;*/
+    flex-direction: column;
+    display: flex;
+    flex: 2;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.progress-bar{
+    width: 100px;
+    background-color: rgb(197, 222, 120);
+    border-width: 1px;
+    border-color: black;
+
+    border-radius: 30px;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    margin-right: 60px;
+
+    height: 50px;
+    width: 500px;
+}
+
+.progress-bar-track{
+    background: linear-gradient(to right,  rgb(241 173 156), rgb(249, 110, 110));
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.side-div{
+    display: flex;
+    
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.calendar-button {
+    width: 40%;
+    padding: 8px; 
+}
+
+
+.calendar-button{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
