@@ -32,7 +32,7 @@ async function getUserName(userId) {
             document.getElementById("Revie").src = "../pictures/revie/Cvetq(3).png";
             document.getElementById("currentMood").innerHTML = "I am a little bit disappointed. I am so desperate for your help!";
         }
-        if(points <=75 && points > 25){
+        if(points <=75 || points > 25){
             document.getElementById("Revie").src = "../pictures/revie/Cvetq(2).png";
             document.getElementById("currentMood").innerHTML = "You are fine but I need more attention. Would you do your tasks to help me!";
         }
