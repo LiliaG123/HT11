@@ -1,197 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .header {
-                border-bottom-width: 1px;
-                border-bottom-style: solid;
-                border-bottom-color: rgb(147, 147, 147); 
-                height: 55px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                position: fixed;
-                justify-content: space-between;
-                top: 0;
-                left: 0;
-                right: 0;
-                background-color: white;
-            }
-            .left-section {
-                width: 150px;
-                display: flex;
-                justify-content: space-between;
-            }
-            .right-section {
-                width: 110px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .logo {
-                height: 45px;
-                border-radius: 20px;
-               border-color: rgb(249, 234, 237);
-            }
-            .homepage-logo {
-               height: 40px;
-               border-radius: 20px;
-               border-style: solid;
-               border-color: rgb(249, 234, 237);
-            }
-            .language-icon {
-                height: 37px;
-                border-radius: 20px;
-                background-color: rgb(249, 234, 237);
-            }
-            .name {
-                font-family: Arial;
-                font-size: 18px;
-                color: black;
-                text-decoration: underline rgb(249, 234, 237);;
-            }
-            .profile-pic {
-                height: 55px;
-                border-radius: 30px;
-            }
-            .menu {
-                width: 500px;
-                height: 30px;
-                border-radius: 20px;
-                border-width: 1px;
-                background-color: rgb(249, 234, 237);
-            }
-            .dropbtn {
-            color: white;
-            font-size: 16px;
-            border:none;
-            }
-            .dropdown {
-            position: relative;
-            display: inline-block;
-            }
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgb(241, 241, 241);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }
-            .dropdown-content a {
-            width: 460px;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            
-            }
-            .dropdown-content a:hover {
-                background-color: rgb(221, 221, 221);
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .picture {
-            width: 450px;
-            height: 250px;
-            padding-top: 23px;
-            border-radius: 12px;
-            }
-            .information-block {
-            height: 530px;
-            border: 1px solid rgb(0, 0, 0); 
-            width: 500px;
-            margin-top: 30px;
-            margin-left: 25px;
-            border-radius: 12px;
-            padding-left: 40px;
-            padding-top: 18px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s; 
-            margin-left: 55px;
-            background-color: rgb(245, 245, 245);
-            }
-            .information-block:hover {
-             background-color: rgb(240, 240, 240); 
-            }
-            .benefits {
-                font-size: 20px;
-                margin-right: 10px;
-            }
-            .benefits,
-            .heading,
-            .link {
-                font-family: Arial;
-                font-weight: 500;
-                font-style: italic;
-            }
-            .link {
-            display: inline-block; 
-            text-decoration: none; 
-            color: inherit;
-            }
-            .blocks {
-                display: flex;
-                align-items: center;
-            }
-
-            .dd-button{
-                margin-top: -2px;
-                border-radius: 0px;
-                border-width: 1px;
-                border-color: gray;
-                background-color: white;
-            }
-        </style>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="informacionen block.css">
+        <script type="module" src="header.js"></script>
+        <title>Informaciq</title>
     </head>
-    <body style="margin-top: 0; padding-top: 55px; height: 1800px; background-color: rgb(249, 234, 237);">
+    <body style="margin-top: 0; padding-top: 55px; height: 1800px; background-color:rgb(255, 229, 217);">
         <div class="header">
             <div class="left-section">
-                <img class="logo" src="../pictures/revie/logo.png">
-                <a href="#"><img class="homepage-logo" src="homepage-icon.jpg"></a>
-                <a href="#"><img class="language-icon" src="language-icon.png"></a>
+                <img class="logo" src="../pictures/revie/logoWhite.png">
+                <a href="#"><img class="homepage-logo" src="pictures/homepage-icon.jpg"></a>
+                <a href="#"><img class="language-icon" src="pictures/language.png"></a>
             </div>
             <div class="middle-section">
                 <div class="dropdown">
                     <button class="menu">Menu &#x2193;</button>
                     <div class="dropdown-content">
-                        <div id="row1" class="row"></div>
-                        <div id="row2" class="row"></div>
-                        <div id="row3" class="row"></div>
-                        <div id="row4" class="row"></div>
-                        <button class="dd-button" onclick="scrollRow('row1')">
-                            <a href="informaciq.html#row1">Meditation</a>
-                        </button>
-                        <button class="dd-button" onclick="scrollRow('row2')">
-                            <a href="informaciq.html#row1">Yoga</a>
-                        </button>
-                        <button class="dd-button" onclick="scrollRow('row3')">
-                            <a href="informaciq.html#row1">Water intake</a>
-                        </button>
-                        <button class="dd-button" onclick="scrollRow('row4')">
-                            <a href="informaciq.html#row1">Sleep</a>
-                        </button>
-                        <button class="dd-button">
-                            <a href="informaciq.html#row1">Information</a>
-                        </button>
-                        <button class="dd-button">
-                            <a href="informaciq.html#row1">Help</a>
-                        </button>
+                       
+                        <a class="dd-button" href="#meditation">
+                            Meditation
+                        </a>
+                        <a class="dd-button" href="#yoga">
+                            Yoga
+                        </a>
+                        <a class="dd-button" href="#water-intake">
+                            Water intake
+                        </a>
+                        <a class="dd-button" href="#sleep">
+                            Sleep
+                        </a>
+                        <a class="dd-button">
+                            Information
+                        </a>
+                        <a class="dd-button" href="https://www.apa.org/topics/crisis-hotlines" target="blank">
+                            Help
+                        </a>
                     </div>
                   </div>
             </div>
             <div class="right-section">
-                <p class="name">Name</p>
-                <img  class="profile-pic" src="profile-picture.jpg">
+                <p class="name" id="username">Name</p>
+                <img  class="profile-pic" src="pictures/profile-picture.jpg">
             </div>
         </div>
+            <hr id="meditation" >
             <div class="blocks">
                 <a class="link"  href="https://www.mindful.org/how-to-meditate/" target="blank">
                     <div class="information-block">
-                        <img class="picture" src="meditation.jpg">
+                        <img class="picture" src="pictures/meditation.jpg">
                         <h2 class="heading">Meditation</h2>
                         <p class="benefits">Meditation helps lower cortisol levels, reducing stress and anxiety.
                            Practicing mindfulness sharpens your ability to concentrate and stay present.
@@ -202,7 +59,7 @@
 
                   <a class="link"  href="https://www.youtube.com/watch?v=inpok4MKVLM" target="blank">
                     <div class="information-block">
-                        <img class="picture" src="thumbnail1.jpg">
+                        <img class="picture" src="pictures/thumbnail1.jpg">
                         <h2 class="heading">Meditation video</h2>
                         <p class="benefits"> If you are feeling restless, listen to this guided meditation to ease
                              your mind and body into falling asleep.Feel better, be better, and do better. Subscribe to 
@@ -211,11 +68,11 @@
                     </div>
                   </a>
             </div>
-
+            <hr id="yoga">
             <div class="blocks">
                 <a class="link"  href="https://www.medicalnewstoday.com/articles/286745" target="blank">
                     <div class="information-block">
-                        <img class="picture" src="yoga.jpg">
+                        <img class="picture" src="pictures/yoga.jpg">
                         <h2 class="heading">Yoga</h2>
                         <p class="benefits"> Yoga stretches and strengthens muscles, reducing stiffness and enhancing mobility. 
                             This can help with posture, balance, and overall body function.
@@ -229,7 +86,7 @@
                   <a class="link"  href="https://www.youtube.com/watch?app=desktop&v=eTgNgGO_bLs&t=01m38s" 
                   target="blank">
                     <div class="information-block">
-                        <img class="picture" src="thumbnail3.jpg">
+                        <img class="picture" src="pictures/thumbnail3.jpg">
                         <h2 class="heading">Yoga-video</h2>
                         <p class="benefits"> Yoga for Complete Beginners! Adriene welcomes all levels - complete and 
                             total beginners to start here! Hop on the mat and start to build the foundation of your
@@ -240,11 +97,11 @@
                   </a>
             </div>
                   
-            
+            <hr id="water-intake">
             <div class="blocks">
                 <a class="link"  href="https://nutritionsource.hsph.harvard.edu/water/" target="blank">
                     <div class="information-block">
-                        <img class="picture" src="water-intake.jpg">
+                        <img class="picture" src="pictures/water-intake.jpg">
                         <h2 class="heading">Water intake</h2>
                         <p class="benefits">Dehydration can cause fatigue and sluggishness, while proper hydration keeps you energized.
                              Water helps maintain concentration, memory, and overall cognitive performance.
@@ -252,11 +109,11 @@
                            Water helps break down food, improving nutrient absorption and preventing constipation.</p>
                     </div>
                   </a>
-
+                  <hr id="sleep">
                   <a class="link"  href="https://www.youtube.com/watch?app=desktop&v=eTgNgGO_bLs&t=01m38s" 
                   target="blank">
-                    <div class="information-block">
-                        <img class="picture" src="sleep.jpg">
+                    <div class="information-block-sleep">
+                        <img class="picture" src="pictures/sleep.jpg">
                         <h2 class="heading">Sleep</h2>
                         <p class="benefits"> During sleep, your body produces infection-fighting cells and proteins that help you stay healthy.
                              Quality sleep helps regulate blood pressure and reduces the risk of heart disease.
@@ -266,25 +123,5 @@
                     </div>
                   </a>
             </div>
-                
-            
-
-            <script>
-                function scrollRow(rowId) {
-                    document.getElementById(rowId).scrollIntoView(
-                {
-                    behavior: 'smooth'
-                }
-                    );
-                }
-
-            </script>
-
-
-
-
     </body>
-
-
-
 </html>
