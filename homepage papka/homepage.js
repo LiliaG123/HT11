@@ -1,13 +1,19 @@
-const quotes = [
-   "You, yourself, as much as anybody in the entire universe, deserve your love and affection",
-   "Healing takes time, and asking for help is a courageous step",
-   "Your present circumstances don’t determine where you go; they merely determine where you start."
-];
-let quoteIndex = 0;
-function changeQuote() {
-    document.getElementById('quote')
-        .innerHTML = quotes[quoteIndex];
-    quoteIndex = (quoteIndex++) % quotes.length;
-    changeQuote();
-    setInterval(changeQuote, 60000);
+const mood = {
+    sad: true,
+    happy: false,
+    dying: false
 }
+
+let message = '';
+
+if (mood.happy) {
+    message = ('I am so happy! You are doing great! I am proud of you');
+} else if (mood.sad) {
+    message = ('You are fine but I need more attention. Would you do your tasks to help me?');
+} else if (mood.dying) {
+    message = 'I am a little bit disappointed. I am so desperate for your help!';
+}
+
+document.body.innerHTML = message;
+
+    
