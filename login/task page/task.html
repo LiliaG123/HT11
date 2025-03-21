@@ -2,6 +2,7 @@
 <html>
 
     <head>
+        <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="task.css">
         <!-- <link rel="stylesheet" href="../../homepage papka/hopepage.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,96 +17,116 @@
 
     <body>
         
-        <div class="header"> 
-            <div> 
-                logo
+        <div class="header">
+            <div class="left-section">
+              <a href="http://127.0.0.1:5502/login/task%20page/task.html" target="blank">
+                <img class="logo" href="task" src="../pictures/revie/logoWhite.png"></a>  
+                <a href="http://127.0.0.1:5502/homepage-papka/homepage.html" target="blank">
+                    <img class="homepage-logo" src="pictures/homepage-icon.jpg"></a>
+                <a >
+                    <img class="language-icon" src="../pictures/language.png"></a>
             </div>
-            <div> 
-                header
-            </div>
-
-        </div>
-
-
-        <div class="main-body">
-
-
-
-                <div class="inside-body">
-
-
-                    <div class="mascot-div">
-                        <img src="../../../pictures/revie/Cvetq4.png" class="mascot-pet">
+            <div class="middle-section">
+                <div class="dropdown">
+                    <button class="menu">Menu &#x2193;</button>
+                    <div class="dropdown-content">
+                       
+                        <a class="dd-button" href="#meditation">
+                            Meditation
+                        </a>
+                        <a class="dd-button" href="#yoga">
+                            Yoga
+                        </a>
+                        <a class="dd-button" href="#water-intake">
+                            Water intake
+                        </a>
+                        <a class="dd-button" href="#sleep">
+                            Sleep
+                        </a>
+                        <a class="dd-button">
+                            Information
+                        </a>
+                        <a class="dd-button" href="https://www.apa.org/topics/crisis-hotlines" target="blank">
+                            Help
+                        </a>
                     </div>
-    
-                    <div class="mascot-section">
-                        <div class="name">
-                            Revie
-                        </div>
-                        
-                        <div class="mascot-info">
-                            
-                            <div class="task-table">
-
-                                <div class="task-field">
-                                    <img src="../../pictures/task page pics/drink.png" class="water-icon" alt="icon">
-                                    <input type="number" class="water-input-field" placeholder="# cups">
-                                </div>
-            
-                                <div class="task-field">
-                                    <img src="../../pictures/task page pics/yoga.png" class="all-icons-task" alt="icon" >
-                                    <input type="number" class="input-field" placeholder=" # min of yoga">
-                                </div>
-            
-                                <div class="task-field">
-                                    <img src="../../pictures/task page pics/meditation.png" class="all-icons-task" alt="icon">
-                                    <input type="number" class="input-field" placeholder="# min of meditation">
-                                </div>
-            
-                                <div class="task-field">
-                                    <img src="../../pictures/task page pics/sleep.png" class="all-icons-task" alt="icon">
-                                    <input type="number" class="input-field" placeholder="# h of sleep">
-                                </div>
-
-                                <div class="task-field-submit">
-                                    
-                                    <input type="submit" class="submit-button">
-                                </div>
-            
-                            </div>
-    
-                        </div>
-    
-                        <div class="progress-bar">
-                            <div class="progress-bar-track">
-                                
-                            </div>
-                        </div>
-                        
-    
-                    </div>
-                    
-
-                    
-    
-                </div>
-                
-            
-
-                
-                
-
+                  </div>
             </div>
-
+            <div class="right-section">
+                <p class="name" id="username">Name</p>
+                <img  class="profile-pic" src="pictures/profile-picture.jpg">
+            </div>
         </div>
+        
 
-
-
-        <div class="inside-body">
+        <!-- <div class="inside-body">
             <div class="date">
                 <input type="date" class="calendar-button">
             </div>
+        </div> -->
+
+        <div class="main-body">
+
+            <div class="inside-body">
+
+
+                <div class="mascot-div">
+                    <img src="../../../pictures/revie/Cvetq4.png" class="mascot-pet">
+                </div>
+
+                <div class="mascot-section">
+                    <div class="name">
+                        Revie
+                    </div>
+                    
+                    <div class="mascot-info">
+                        
+                        <div class="task-table">
+
+                            <div class="task-field">
+                                <img src="../../pictures/task page pics/drink.png" class="water-icon" alt="icon">
+                                <input type="number" class="water-input-field" placeholder="# cups">
+                            </div>
+        
+                            <div class="task-field">
+                                <img src="../../pictures/task page pics/yoga.png" class="all-icons-task" alt="icon" >
+                                <input type="number" class="input-field" placeholder=" # min of yoga">
+                            </div>
+        
+                            <div class="task-field">
+                                <img src="../../pictures/task page pics/meditation.png" class="all-icons-task" alt="icon">
+                                <input type="number" class="input-field" placeholder="# min of meditation">
+                            </div>
+        
+                            <div class="task-field">
+                                <img src="../../pictures/task page pics/sleep.png" class="all-icons-task" alt="icon">
+                                <input type="number" class="input-field" placeholder="# h of sleep">
+                            </div>
+
+                            <div class="task-field-submit">
+                                
+                                <input type="submit" class="submit-button">
+                            </div>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar-track">
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>   
+
         </div>
+
+    </div>
+
 
 
     </body>
