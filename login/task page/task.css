@@ -31,8 +31,11 @@ body{
     padding: 0; 
 }
 
-.input-field{
+.water-input-field::placeholder {
+    font-size: 15px;
+}
 
+.input-field{
     margin-left: 270px;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -45,8 +48,10 @@ body{
     max-width: 170px;
     line-height: 40px; 
     padding: 0;  
-    
-    
+}
+
+.input-field::placeholder {
+    font-size: 15px;
 }
 
 .submit-button{
@@ -275,7 +280,7 @@ body{
 
 
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
