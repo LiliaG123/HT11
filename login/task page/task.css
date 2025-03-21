@@ -2,10 +2,6 @@
     height: 60px;
 }
 
-.task-table{
-    display: flex;
-    flex-direction: column;
-}
 
 .main-body-task{
     margin-top: 20px;
@@ -34,6 +30,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    margin-left: 30px;
+
 }
 
 .progress-bar{
@@ -67,8 +66,10 @@
     
 }
 
-.inside-body{
+.inside-body-up{
 
+    margin-right: 150px;
+    margin-left: 150px;
 
     display: flex;
     flex-direction: row;
@@ -78,5 +79,44 @@
     border-color: gray;
     border-radius: 17px;
 
+    position: relative;
 
+
+}
+
+.main-body{
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.task-table{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    border-width: 2px;
+    border-color: black;
+
+    top: 0;
+    bottom: 0;
+    right: 50px;
+}
+
+
+.task-field{
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+
+    display: flex;
+
+    flex-direction: column;
 }
