@@ -37,8 +37,7 @@
             .homepage-logo {
                height: 40px;
                border-radius: 20px;
-               border-style: solid;
-               border-color: rgb(249, 234, 237);
+               border: none;
             }
             .language-icon {
                 height: 37px;
@@ -56,7 +55,7 @@
                 border-radius: 30px;
             }
             .menu {
-                width: 500px;
+                width: 800px;
                 height: 30px;
                 border-radius: 20px;
                 border-width: 1px;
@@ -147,7 +146,7 @@
             }
         </style>
     </head>
-    <body style="margin-top: 0; padding-top: 55px; height: 1800px; background-color: rgb(249, 234, 237);">
+    <body style="margin-top: 0; padding-top: 55px; height: 1800px; background-color:rgb(255, 229, 217);">
         <div class="header">
             <div class="left-section">
                 <img class="logo" src="../pictures/revie/logo.png">
@@ -158,28 +157,25 @@
                 <div class="dropdown">
                     <button class="menu">Menu &#x2193;</button>
                     <div class="dropdown-content">
-                        <div id="row1" class="row"></div>
-                        <div id="row2" class="row"></div>
-                        <div id="row3" class="row"></div>
-                        <div id="row4" class="row"></div>
-                        <button class="dd-button" onclick="scrollRow('row1')">
-                            <a href="informaciq.html#row1">Meditation</a>
-                        </button>
-                        <button class="dd-button" onclick="scrollRow('row2')">
-                            <a href="informaciq.html#row1">Yoga</a>
-                        </button>
-                        <button class="dd-button" onclick="scrollRow('row3')">
-                            <a href="informaciq.html#row1">Water intake</a>
-                        </button>
-                        <button class="dd-button" onclick="scrollRow('row4')">
-                            <a href="informaciq.html#row1">Sleep</a>
-                        </button>
-                        <button class="dd-button">
-                            <a href="informaciq.html#row1">Information</a>
-                        </button>
-                        <button class="dd-button">
-                            <a href="informaciq.html#row1">Help</a>
-                        </button>
+                       
+                        <a class="dd-button" href="#meditation">
+                            Meditation
+                        </a>
+                        <a class="dd-button" href="#yoga">
+                            Yoga
+                        </a>
+                        <a class="dd-button" href="#water-intake">
+                            Water intake
+                        </a>
+                        <a class="dd-button" href="#sleep">
+                            Sleep
+                        </a>
+                        <a class="dd-button">
+                            Information
+                        </a>
+                        <a class="dd-button">
+                            Help
+                        </a>
                     </div>
                   </div>
             </div>
@@ -188,6 +184,7 @@
                 <img  class="profile-pic" src="profile-picture.jpg">
             </div>
         </div>
+            <hr id="meditation">
             <div class="blocks">
                 <a class="link"  href="https://www.mindful.org/how-to-meditate/" target="blank">
                     <div class="information-block">
@@ -211,7 +208,7 @@
                     </div>
                   </a>
             </div>
-
+            <hr id="yoga">
             <div class="blocks">
                 <a class="link"  href="https://www.medicalnewstoday.com/articles/286745" target="blank">
                     <div class="information-block">
@@ -240,7 +237,7 @@
                   </a>
             </div>
                   
-            
+            <hr id="water-intake">
             <div class="blocks">
                 <a class="link"  href="https://nutritionsource.hsph.harvard.edu/water/" target="blank">
                     <div class="information-block">
@@ -252,7 +249,7 @@
                            Water helps break down food, improving nutrient absorption and preventing constipation.</p>
                     </div>
                   </a>
-
+                  <hr id="sleep">
                   <a class="link"  href="https://www.youtube.com/watch?app=desktop&v=eTgNgGO_bLs&t=01m38s" 
                   target="blank">
                     <div class="information-block">
@@ -266,25 +263,5 @@
                     </div>
                   </a>
             </div>
-                
-            
-
-            <script>
-                function scrollRow(rowId) {
-                    document.getElementById(rowId).scrollIntoView(
-                {
-                    behavior: 'smooth'
-                }
-                    );
-                }
-
-            </script>
-
-
-
-
     </body>
-
-
-
 </html>
