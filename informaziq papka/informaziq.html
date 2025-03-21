@@ -95,8 +95,9 @@
             .dropdown:hover .dropdown-content {
                 display: block;
             }
-            .meditation {
+            .picture {
             width: 450px;
+            height: 250px;
             padding-top: 23px;
             border-radius: 12px;
             }
@@ -112,24 +113,29 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s; 
+            margin-left: 55px;
             }
             .information-block:hover {
              background-color: rgb(240, 240, 240); 
             }
-            .meditation-benefits {
+            .benefits {
                 font-size: 20px;
             }
-            .meditation-benefits,
+            .benefits,
             .heading,
-            .link-meditation {
+            .link {
                 font-family: Arial;
                 font-weight: 500;
                 font-style: italic;
             }
-            .link-meditation {
-            display: block; 
+            .link {
+            display: inline-block; 
             text-decoration: none; 
-            color: inherit; 
+            color: inherit;
+            }
+            .blocks {
+                display: flex;
+                align-items: center;
             }
         </style>
     </head>
@@ -158,20 +164,54 @@
                 <img  class="profile-pic" src="profile-picture.jpg">
             </div>
         </div>
-            
-                    <a class="link-meditation"  href="https://www.youtube.com/watch?v=inpok4MKVLM" target="blank">
-                        <div class="information-block">
-                            <img class="meditation" src="meditation.jpg">
-                            <h2 class="heading">Meditation</h2>
-                            <p class="meditation-benefits">Meditation helps lower cortisol levels, reducing stress and anxiety.
-                               Practicing mindfulness sharpens your ability to concentrate and stay present.
-                               Meditation can improve sleep quality by calming the mind before bedtime.
-                               It can reduce blood pressure, improve heart health, and strengthen the immune system.</p>
-                        </div>
-                      </a>
-            
-                    
-        
+            <div class="blocks">
+                <a class="link"  href="https://www.youtube.com/watch?v=inpok4MKVLM" target="blank">
+                    <div class="information-block">
+                        <img class="picture" src="meditation.jpg">
+                        <h2 class="heading">Meditation</h2>
+                        <p class="benefits">Meditation helps lower cortisol levels, reducing stress and anxiety.
+                           Practicing mindfulness sharpens your ability to concentrate and stay present.
+                           Meditation can improve sleep quality by calming the mind before bedtime.
+                           It can reduce blood pressure, improve heart health, and strengthen the immune system.</p>
+                    </div>
+                  </a>
 
+                  <a class="link"  href="https://www.youtube.com/watch?v=v7AYKMP6rOE" target="blank">
+                    <div class="information-block">
+                        <img class="picture" src="yoga.jpg">
+                        <h2 class="heading">Yoga</h2>
+                        <p class="benefits"> Regular yoga practice helps stretch and lengthen muscles, increasing overall flexibility.
+                             It can lower blood pressure, improve circulation, and reduce the risk of heart disease.
+                           Yoga encourages proper alignment, reducing strain on your spine and improving balance.
+                        </p>
+                    </div>
+                  </a>
+            </div>
+
+            <div class="blocks">
+                <a class="link"  href="https://nutritionsource.hsph.harvard.edu/water/" target="blank">
+                    <div class="information-block">
+                        <img class="picture" src="water-intake.jpg">
+                        <h2 class="heading">Water intake</h2>
+                        <p class="benefits">Dehydration can cause fatigue and sluggishness, while proper hydration keeps you energized.
+                             Water helps maintain concentration, memory, and overall cognitive performance.
+                           It keeps muscles and joints lubricated, reducing the risk of cramps and improving endurance.
+                           Water helps break down food, improving nutrient absorption and preventing constipation.</p>
+                    </div>
+                  </a>
+
+                  <a class="link"  href="https://www.youtube.com/watch?app=desktop&v=eTgNgGO_bLs&t=01m38s" 
+                  target="blank">
+                    <div class="information-block">
+                        <img class="picture" src="sleep.jpg">
+                        <h2 class="heading">Sleep</h2>
+                        <p class="benefits"> During sleep, your body produces infection-fighting cells and proteins that help you stay healthy.
+                             Quality sleep helps regulate blood pressure and reduces the risk of heart disease.
+                            Poor sleep can disrupt hormones that control hunger, leading to overeating.
+                             Sleep replenishes your body’s energy reserves, ensuring you feel refreshed and active.
+                        </p>
+                    </div>
+                  </a>
+            </div>
     </body>
 </html>
