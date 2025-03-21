@@ -1,5 +1,114 @@
-.center-div{
-    display: flex;
-    
+body{
+    background-color: rgb(255, 229, 217);
+}
 
+.group-divs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+
+
+.big-div{
+    /* display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    width: 700px;
+
+    border-width: 2px;
+    border-color: black;
+
+    padding: 20px; */
+
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    background-color: rgb(252, 218, 203);
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: gray; */
+    border-radius: 17px;
+}
+
+.inside-div{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    width: 500px;
+}
+
+.profile-picture{
+    width: 200px;
+    border-radius: 100px;
+}
+
+.input-field{
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+
+    font-size: 18px;
+
+}
+
+.submit-button{
+    /* height: 30px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-right: 152px;
+    border-radius: 7px;
+    border-width: 1px;
+    font-size: 18px; */
+    
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #efb2c5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #e72f7c;
+}
+
+.un-div{
+    padding: 0;
+}
+
+.login-title{
+    font-family: arial;
+    margin-top: 5px;
+    margin-bottom: -15px;
+
+    color: white;
 }
