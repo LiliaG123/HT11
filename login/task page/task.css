@@ -1,6 +1,7 @@
 body{
     background-color: rgb(255, 229, 217);
     padding-top: 46px;
+    font-family: 'Winky Sans';
 }
 
 .all-icons-task{
@@ -182,6 +183,7 @@ body{
     background-color:lightblue;
     display: flex;
     flex-direction: row;
+    font-family: 'Winky Sans';
 }
 
 .main-body{
