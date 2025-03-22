@@ -23,6 +23,9 @@
     .information-block:hover {
      background-color: rgb(240, 240, 240); 
     }
+    .information-block {
+        
+    }
     .benefits {
         font-size: 20px;
         margin-right: 10px;
