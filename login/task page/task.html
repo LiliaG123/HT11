@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../../../hopepage.css">
         <title>Tasks</title>
         <script src="../../../homepage.js"></script>
+        <script type="module" src="task.js" defer></script>
     </head>
 
 
@@ -22,7 +23,7 @@
               <a href="http://127.0.0.1:5502/login/task%20page/task.html" target="blank">
                 <img class="logo" href="task" src="../pictures/revie/logoWhite.png"></a>  
                 <a href="http://127.0.0.1:5502/homepage-papka/homepage.html" target="blank">
-                    <img class="homepage-logo" src="pictures/homepage-icon.jpg"></a>
+                    <img class="homepage-logo" src="../../pictures/logo/homepage.png"></a>
                 <a >
                     <img class="language-icon" src="../pictures/language.png"></a>
             </div>
@@ -85,27 +86,27 @@
 
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/drink.png" class="water-icon" alt="icon">
-                                <input type="number" class="water-input-field" placeholder="# cups">
+                                <input type="number" class="water-input-field" placeholder="# cups" id="waterInput">
                             </div>
         
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/yoga.png" class="all-icons-task" alt="icon" >
-                                <input type="number" class="input-field" placeholder=" # min of yoga">
+                                <input type="number" class="input-field" placeholder=" # min of yoga" id="yogaInput">
                             </div>
         
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/meditation.png" class="all-icons-task" alt="icon">
-                                <input type="number" class="input-field" placeholder="# min of meditation">
+                                <input type="number" class="input-field" placeholder="# min of meditation" id="mediInput">
                             </div>
         
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/sleep.png" class="all-icons-task" alt="icon">
-                                <input type="number" class="input-field" placeholder="# h of sleep">
+                                <input type="number" class="input-field" placeholder="# h of sleep" id="sleepInput">
                             </div>
 
                             <div class="task-field-submit">
                                 
-                                <input type="submit" class="submit-button">
+                                <button type="button" class="submit-button" onclick="enterData()">Submit</button>
                             </div>
         
                         </div>
