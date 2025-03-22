@@ -13,6 +13,7 @@
     right: 0;
     background-color: white;
     background-color: rgb(252, 218, 202);
+    font-family: 'Winky Sans';
 }
 .left-section {
     width: 150px;
@@ -51,7 +52,6 @@
     
 }
 .name {
-    font-family: Arial;
     font-size: 18px;
     color: black;
 }
