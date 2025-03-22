@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="profile-page.css">
         <title>Profile Settings</title>
-        <script type="text/javascript" src="profile-page.js"></script>
+        <script type="module" src="profile-page.js" defer></script>
     </head>
     <body>
         <!-- Add header here -->
@@ -20,18 +20,18 @@
                         <div class="login-title">
                             Username
                         </div>
-                        <input type="text" placeholder="Username" class="input-field">
+                        <input type="text" placeholder="Username" class="input-field" id="username">
                     </div>
                     
                     <div>
                         <div class="login-title">
                             Age
                         </div>
-                        <input type="number" placeholder="Age" class="input-field">
+                        <input type="number" placeholder="Age" class="input-field" id="age">
                     </div>
                     
                     <div>
-                        <input type="submit" class="submit-button">
+                        <button type="button" class="submit-button" onclick="enterData()">Submit</button>
                     </div>
                     
 
