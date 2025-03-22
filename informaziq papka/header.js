@@ -1,6 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
+const userId = localStorage.getItem("userId");
+
 const firebaseConfig = {
     apiKey: "AIzaSyAVthqEceSCv-aXZ7pMHqs1Z25GWUtYNAw",
     authDomain: "team-undefined-bca8f.firebaseapp.com",
@@ -16,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 async function getUserName(userId) {
-    const userDocRef = doc(db, 'undefined', userId); 
+    const userDocRef = doc(db, 'users', userId); 
     try {
       const docSnapshot = await getDoc(userDocRef);
       if (docSnapshot.exists()) {
@@ -29,6 +31,6 @@ async function getUserName(userId) {
       console.error("Error getting user data:", error);
     }
   }
-  getUserName('user');
+  getUserName(userId);
 
   

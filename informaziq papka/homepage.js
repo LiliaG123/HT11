@@ -1,6 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
+const userId = localStorage.getItem("userId");
+
 const firebaseConfig = {
     apiKey: "AIzaSyAVthqEceSCv-aXZ7pMHqs1Z25GWUtYNAw",
     authDomain: "team-undefined-bca8f.firebaseapp.com",
@@ -15,12 +17,12 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-async function getUserName(userId) {
-    const userDocRef = doc(db, 'undefined', userId); 
+async function getMood(userId) {
+    const userDocRef = doc(db, 'users', userId); 
     try {
       const docSnapshot = await getDoc(userDocRef);
       if (docSnapshot.exists()) {
-        const points = docSnapshot.data().dailyPoints;
+        const points = docSnapshot.data().points;
         let tracker = document.getElementById("tracker");
         if(points*5 > 500){
             tracker.style.width = "500px";
@@ -32,7 +34,7 @@ async function getUserName(userId) {
             document.getElementById("Revie").src = "../pictures/revie/Cvetq(3).png";
             document.getElementById("currentMood").innerHTML = "I am a little bit disappointed. I am so desperate for your help!";
         }
-        if(points <=75 || points > 25){
+        if(points <=75 && points > 25){
             document.getElementById("Revie").src = "../pictures/revie/Cvetq(2).png";
             document.getElementById("currentMood").innerHTML = "You are fine but I need more attention. Would you do your tasks to help me!";
         }
@@ -47,28 +49,4 @@ async function getUserName(userId) {
       console.error("Error getting user data:", error);
     }
   }
-  getUserName('user');
-
-  
-
-/*const mood = {
-    sad: true,
-    happy: false,
-    dying: false
-}
-
-let message = '';
-
-if (mood.happy) {
-    message = ('I am so happy! You are doing great! I am proud of you');
-} else if (mood.sad) {
-    message = ('You are fine but I need more attention. Would you do your tasks to help me?');
-} else if (mood.dying) {
-    message = 'I am a little bit disappointed. I am so desperate for your help!';
-}
-
-document.body.innerHTML = message;*/
-
-
-
-    
+  getMood(userId);
