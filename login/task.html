@@ -7,16 +7,12 @@
         <!-- <link rel="stylesheet" href="../../homepage papka/hopepage.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,
-        wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <title>Taskbar</title>
-        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="../../../hopepage.css">
         <title>Tasks</title>
-        <script type="module" src="../../homepage papka/homepage.js"></script>
-        <script type="module" src="task.js" defer></script>
+        <script src="../../../homepage.js"></script>
+        <script type="module" src="../informaziq papka/header.js"></script>
     </head>
 
 
@@ -25,18 +21,18 @@
         <div class="header">
             <div class="left-section">
               <a href="http://127.0.0.1:5502/login/task%20page/task.html" target="blank">
-                <img class="logo" href="task" src="../../pictures/revie/logoWhite.png"></a>  
-                <a href="http://127.0.0.1:5502/homepage-papka/homepage.html" target="blank">
-                    <img class="homepage-logo" src="../../informaziq papka/pictures/homepage-icon.jpg"></a>
+                <img class="logo" href="task" src="../pictures/revie/logoWhite.png"></a>  
+                <a href="../informaziq papka/homepage.html" target="blank">
+                    <img class="homepage-logo" src="../informaziq papka/pictures/homepage-icon.jpg"></a>
                 <a >
-                    <img class="language-icon" src="../../informaziq papka/pictures/language.png"></a>
+                    <img class="language-icon" src="../informaziq papka/pictures/language.png"></a>
             </div>
             <div class="middle-section">
                 <div class="dropdown">
                     <button class="menu">Menu &#x2193;</button>
                     <div class="dropdown-content">
-                        <a class="dd-button href" href="http://127.0.0.1:5502/informaziq%20papka/informaziq.html"
-                        target="_blank">
+                       
+                        <a class="dd-button" href="../informaziq papka/informaziq.html">
                             Information
                         </a>
                         <a class="dd-button" href="https://www.apa.org/topics/crisis-hotlines" target="blank">
@@ -47,8 +43,7 @@
             </div>
             <div class="right-section">
                 <p class="name" id="username">Name</p>
-               <a href="http://127.0.0.1:5502/login/profile-page.html" target="_blank">
-                <img  class="profile-pic" src="../../informaziq papka/pictures/profile-picture.jpg"></a> 
+               <a href="profile-page.html"><img  class="profile-pic" src="../informaziq papka/pictures/profile-picture.jpg"></a> 
             </div>
         </div>
         
@@ -69,9 +64,6 @@
                 </div>
 
                 <div class="mascot-section">
-                    <div class="name">
-                        Revie
-                    </div>
                     
                     <div class="mascot-info">
                         
@@ -79,27 +71,27 @@
 
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/drink.png" class="water-icon" alt="icon">
-                                <input type="number" class="water-input-field" placeholder="# cups" id="waterInput">
+                                <input type="number" class="water-input-field" placeholder="# cups">
                             </div>
         
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/yoga.png" class="all-icons-task" alt="icon" >
-                                <input type="number" class="input-field" placeholder=" # min of yoga" id="yogaInput">
+                                <input type="number" class="input-field" placeholder=" # min of yoga">
                             </div>
         
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/meditation.png" class="all-icons-task" alt="icon">
-                                <input type="number" class="input-field" placeholder="# min of meditation" id="mediInput">
+                                <input type="number" class="input-field" placeholder="# min of meditation">
                             </div>
         
                             <div class="task-field">
                                 <img src="../../pictures/task page pics/sleep.png" class="all-icons-task" alt="icon">
-                                <input type="number" class="input-field" placeholder="# h of sleep" id="sleepInput">
+                                <input type="number" class="input-field" placeholder="# h of sleep">
                             </div>
 
                             <div class="task-field-submit">
                                 
-                                <button type="button" class="submit-button" onclick="enterData()">Submit</button>
+                                <input type="submit" class="submit-button">
                             </div>
         
                         </div>

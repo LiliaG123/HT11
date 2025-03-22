@@ -23,6 +23,9 @@
     .information-block:hover {
      background-color: rgb(240, 240, 240); 
     }
+    .information-block {
+        
+    }
     .benefits {
         font-size: 20px;
         margin-right: 10px;
@@ -30,9 +33,8 @@
     .benefits,
     .heading,
     .link {
-        font-family: Arial;
         font-weight: 500;
-        font-style: italic;
+        font-family: 'Winky Sans';
     }
     .link {
     display: inline-block; 

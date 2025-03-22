@@ -17,11 +17,18 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-// Sign in function
 document.getElementById('signInBtn').addEventListener('click', () => {
     signInWithPopup(auth, provider)
         .then((result) => {
-            console.log(result.user);
+            const user = result.user;
+            console.log("User ID:", user.uid);
+
+            // Store user ID for use across pages
+            localStorage.setItem("userId", user.uid);
+            localStorage.setItem("userName", user.displayName);
+            localStorage.setItem("userEmail", user.email);
+
+            updateUI(user);
         })
         .catch((error) => {
             console.error(error);

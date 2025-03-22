@@ -1,7 +1,6 @@
 body{
     background-color: rgb(255, 229, 217);
     padding-top: 46px;
-    font-family: 'Winky Sans';
 }
 
 .all-icons-task{
@@ -64,7 +63,7 @@ body{
     border-radius: 40px;
     border-width: 1px;
 
-    width: 60px;
+    width: 200px;
     height: 20px;
 }
 
@@ -183,7 +182,6 @@ body{
     background-color:lightblue;
     display: flex;
     flex-direction: row;
-    font-family: 'Winky Sans';
 }
 
 .main-body{
@@ -395,4 +393,17 @@ display: block;
     border-width: 1px;
     border-color: gray;
     background-color: white;
+}
+.submit-button {
+   
+    display: block;
+    width: 40%;
+    padding-bottom: 6px;
+    margin: 10px auto;
+    background-color:rgb(241 173 156);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
 }
